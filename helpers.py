@@ -25,4 +25,16 @@ def checkKurto(pandasColumn):
     return res
 
 def dHist(data, x):
-    return sns.histplot(data=data, x=x, kde=True)
+    return sns.histplot(data=data, x=x)
+
+def checkAgostino(df):
+    from scipy.stats import normaltest
+    # Uji normalitas dengan D'Agostino and Pearson's Test
+    dagostino_stat, dagostino_p_value = normaltest(df['price'])
+
+    if dagostino_p_value >= 0.05:
+        # Ho
+        print(f" pvalue={dagostino_p_value}, pvalue>=0.05, artinya gagal menolak Ho. Kita anggap Data terdistribusi normal")
+    else:
+        # H1/Ha
+        print(f" pvalue={dagostino_p_value}, pvalue<=0.05, artinya berhasil menolak Ho. Kita anggap Data tidak terdistribusi normal")
