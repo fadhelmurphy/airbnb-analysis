@@ -31,7 +31,7 @@ jobs:
       - name: Upload to gdrive
         uses: mathisve/gdrive-upload-action@main
         with:
-          filename: Airbnb Listings Bangkok_cleaned.csv
+          filename: ./Airbnb Listings Bangkok_cleaned.csv
           folderId: ${{ secrets.FOLDER_ID }}
           credentials: ${{ secrets.GDRIVE_SA_KEY }}
           encoded: false
