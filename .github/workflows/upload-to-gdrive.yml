@@ -28,9 +28,34 @@ jobs:
         run: |
           jupyter nbconvert --to notebook --execute notebook.ipynb --ExecutePreprocessor.timeout=-1
 
+      - name: Save CSV file as artifact
+        uses: actions/upload-artifact@v2
+        with:
+          name: generated-csv-files
+          path: ./Airbnb_Listings_Bangkok_cleaned.csv # Ganti dengan path file CSV yang dihasilkan oleh notebook
+
+      - name: Download site content
+        uses: actions/download-artifact@v2
+        with:
+          name: generated-csv-files
+      - name: Archive site content
+        uses: thedoctor0/zip-release@master # buat kompres
+        with:
+          filename: downloaded-artifact.zip
+
+      - name: Upload release assets
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN  }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./downloaded-artifact.zip
+          asset_name: cleaned_data.zip
+          asset_content_type: application/zip
+
       - name: Upload to gdrive
         uses: mathisve/gdrive-upload-action@main
         with:
-          filename: Airbnb Listings Bangkok_cleaned.csv
+          filename: ./downloaded-artifact.zip
           folderId: ${{ secrets.FOLDER_ID }}
           credentials: ${{ secrets.GDRIVE_SA_KEY }}
