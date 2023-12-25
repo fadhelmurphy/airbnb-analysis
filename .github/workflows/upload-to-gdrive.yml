@@ -27,9 +27,9 @@ jobs:
         run: |
           jupyter nbconvert --to notebook --execute notebook.ipynb --ExecutePreprocessor.timeout=-1
 
-      - name: Upload to Google Drive
-        uses: knightsc/upload-to-google-drive-action@v1
+      - name: Upload to gdrive
+        uses: mathisve/gdrive-upload-action@main
         with:
-          serviceAccountJson: ${{ secrets.GDRIVE_SA_KEY }}
-          filePath: ./Airbnb Listings Bangkok_cleaned.csv # Ganti dengan path file CSV yang ingin diunggah
-          folderId: '1tkawfK96-JxqLFGSjdZUMnlCl5x06FHh' # Ganti dengan ID folder tujuan di Google Drive
+          filename: ./Airbnb Listings Bangkok_cleaned.csv
+          folderId: ${{ secrets.FOLDER_ID }}
+          credentials: ${{ secrets.GDRIVE_SA_KEY }}
