@@ -8,8 +8,11 @@ Airbnb adalah jaringan pasar daring dan penginapan rumahan sejawat yang memungki
 
 Data set yang digunakan pada analisis ini berasal dari [Kaggle](https://www.kaggle.com/code/indraputra21/airbnb-data-extraction-and-visualizationhttps:/).
 
-## Cleaned Data
+## Dashboard
 
+Untuk visualisasi menggunakan dashboard dapat dilihat [disini](https://public.tableau.com/app/profile/fadhel.ijlal.falah8801/viz/Capstone_17030639284550/Dashboard?publish=yes).
+
+## Cleaned Data
 
 ![](assets/20231225_212825_ci_cd.png)
 
