@@ -28,11 +28,9 @@ jobs:
         run: |
           jupyter nbconvert --to notebook --execute notebook.ipynb --ExecutePreprocessor.timeout=-1
 
-      - name: Mirror Directory Structure
-        uses: adityak74/google-drive-upload-git-action@main
+      - name: Upload to gdrive
+        uses: mathisve/gdrive-upload-action@main
         with:
+          filename: Airbnb Listings Bangkok_cleaned.csv
           folderId: ${{ secrets.FOLDER_ID }}
           credentials: ${{ secrets.GDRIVE_SA_KEY }}
-          filename: ./Airbnb Listings Bangkok_cleaned.csv
-          overwrite: "true"
-          mirrorDirectoryStructure: "true"
