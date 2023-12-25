@@ -33,6 +33,6 @@ jobs:
         with:
           folderId: ${{ secrets.FOLDER_ID }}
           credentials: ${{ secrets.GDRIVE_SA_KEY }}
-          filename: Airbnb Listings Bangkok_cleaned.csv
+          filename: ./Airbnb Listings Bangkok_cleaned.csv
           overwrite: "true"
           mirrorDirectoryStructure: "true"
