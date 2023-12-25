@@ -34,3 +34,4 @@ jobs:
           filename: ./Airbnb Listings Bangkok_cleaned.csv
           folderId: ${{ secrets.FOLDER_ID }}
           credentials: ${{ secrets.GDRIVE_SA_KEY }}
+          encoded: false
