@@ -8,7 +8,7 @@ Airbnb adalah jaringan pasar daring dan penginapan rumahan sejawat yang memungki
 
 Data set yang digunakan pada analisis ini berasal dari [Kaggle](https://www.kaggle.com/code/indraputra21/airbnb-data-extraction-and-visualizationhttps:/).
 
-## Dashboard
+## Dashboard (Tableau)
 
 Untuk visualisasi menggunakan dashboard dapat dilihat [disini](https://public.tableau.com/app/profile/fadhel.ijlal.falah8801/viz/Capstone_17030639284550/Dashboard?publish=yes).
 
@@ -16,7 +16,7 @@ Untuk visualisasi menggunakan dashboard dapat dilihat [disini](https://public.ta
 
 ![](assets/20231225_212825_ci_cd.png)
 
-Dengan *Github Actions* setiap ada perubahan *code* pada *repository* ini akan otomatis diunggah ke [Google Drive](https://drive.google.com/drive/u/0/folders/1tkawfK96-JxqLFGSjdZUMnlCl5x06FHh).
+Dengan *Github Actions* setiap ada perubahan *code* pada *repository* ini akan otomatis diunggah ke [Google Drive](https://drive.google.com/drive/u/0/folders/1tkawfK96-JxqLFGSjdZUMnlCl5x06FHh) yang merupakan hasil dari data cleaning.
 
 ## How to run project
 
