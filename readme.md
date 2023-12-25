@@ -10,6 +10,9 @@ Data set yang digunakan pada analisis ini berasal dari [Kaggle](https://www.kagg
 
 ## Cleaned Data
 
+
+![](assets/20231225_212825_ci_cd.png)
+
 Dengan *Github Actions* setiap ada perubahan *code* pada *repository* ini akan otomatis diunggah ke [Google Drive](https://drive.google.com/drive/u/0/folders/1tkawfK96-JxqLFGSjdZUMnlCl5x06FHhhttps:/).
 
 ## How to run project
