@@ -28,8 +28,8 @@ jobs:
           jupyter nbconvert --to notebook --execute notebook.ipynb --ExecutePreprocessor.timeout=-1
 
       - name: Upload to Google Drive
-        uses: gdrive-org/upload-action@master
+        uses: knightsc/upload-to-google-drive-action@v1
         with:
           serviceAccountJson: ${{ secrets.GDRIVE_SA_KEY }}
-          source: ./Airbnb Listings Bangkok_cleaned.csv # Ganti dengan path file CSV yang ingin diunggah
-          destination: '/learn-automate/capstone/Airbnb Listings Bangkok_cleaned.csv' # Ganti dengan path tujuan di Google Drive
+          filePath: ./Airbnb Listings Bangkok_cleaned.csv # Ganti dengan path file CSV yang ingin diunggah
+          folderId: '1tkawfK96-JxqLFGSjdZUMnlCl5x06FHh' # Ganti dengan ID folder tujuan di Google Drive
