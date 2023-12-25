@@ -16,7 +16,7 @@ jobs:
       - name: Upload to gdrive
         uses: adityak74/google-drive-upload-git-action@main
         with:
-          credentials: ${{ secrets.GOOGLE_DRIVE_SA_KEY }}
+          credentials: ${{ secrets.GDRIVE_SA_KEY }}
           # filename: ./output/*.csv # untuk upload semua file .csv dalam folder output 
           filename: "Airbnb Listings Bangkok_cleaned.csv"
           folderId: ${{ secrets.FOLDER_ID }}
