@@ -1,0 +1,24 @@
+name: Upload CSV to Google Drive
+
+on:
+  push:
+    branches:
+      - master  # Ganti dengan nama branch yang sesuai
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Upload to gdrive
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GOOGLE_DRIVE_SA_KEY }}
+          # filename: ./output/*.csv # untuk upload semua file .csv dalam folder output 
+          filename: "Airbnb Listings Bangkok_cleaned.csv"
+          folderId: ${{ secrets.FOLDER_ID }}
+          overwrite: "true" # optional boolean
+          
