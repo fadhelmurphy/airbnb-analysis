@@ -61,6 +61,10 @@ Data set yang digunakan pada analisis ini berasal dari [Kaggle](https://www.kagg
 
 Untuk visualisasi menggunakan dashboard dapat dilihat [disini](https://public.tableau.com/app/profile/fadhel.ijlal.falah8801/viz/Capstone_17030639284550/Dashboard?publish=yes).
 
+## Story (Tableau)
+
+Untuk visualisasi menggunakan Story dapat dilihat [disini](https://public.tableau.com/views/Capstone_17030639284550/Story?:language=en-US&publish=yes&:display_count=n&:origin=viz_share_link).
+
 ## Cleaned Data
 
 ![](./img/ci:cd.png)
