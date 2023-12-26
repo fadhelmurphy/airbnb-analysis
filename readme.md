@@ -14,7 +14,7 @@ Untuk visualisasi menggunakan dashboard dapat dilihat [disini](https://public.ta
 
 ## Cleaned Data
 
-![](assets/20231225_212825_ci_cd.png)
+![](./img/ci:cd.png)
 
 Dengan *Github Actions* setiap ada perubahan *code* pada *repository* ini akan otomatis diunggah ke [Google Drive](https://drive.google.com/drive/u/0/folders/1tkawfK96-JxqLFGSjdZUMnlCl5x06FHh) yang merupakan hasil dari data cleaning.
 
