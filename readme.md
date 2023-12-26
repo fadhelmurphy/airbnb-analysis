@@ -4,9 +4,58 @@
 
 Airbnb adalah jaringan pasar daring dan penginapan rumahan sejawat yang memungkinkan pengguna mendaftarkan atau menyewa properti untuk digunakan dalam jangka pendek. Harga sewanya ditetapkan oleh pemilik properti. Melalui analisa harga properti Airbnb di Bangkok menjadi wawasan bagi pemilik properti dalam menentukan harga yang kompetitif, memahami kebutuhan pasar, serta merancang strategi yang lebih efektif dalam pengelolaan properti untuk meningkatkan pendapatan penyewaan properti Airbnb di Bangkok
 
+# Pernyataan Masalah
+Pemilik properti Ingin **meningkatkan pendapatan dan daya tarik properti Airbnb di Bangkok**. 
+
+Sebagai seorang data scientist, saya akan menjawab pertanyaan berikut:
+
+**Bagaimana meningkatkan pendapatan dan daya tarik properti Airbnb di Bangkok?**
+
+## Analisis yang Diperlukan
+
+- **Analisis Harga Properti Berdasarkan Lokasi**:
+
+Mengidentifikasi lokasi-lokasi dengan harga properti tinggi dan rendah untuk menyesuaikan harga secara cerdas.
+- **Harga terhadap tipe kamar**:
+
+Memahami perbedaan harga antar jenis kamar untuk menawarkan diversifikasi yang lebih baik kepada calon penyewa.
+
+- **Jumlah Tipe Kamar berdasarkan daerah**:
+
+Untuk memahami macam tipe kamar yang banyak dibangun pada daerah tertentu
+
+- **Jumlah ulasan pada tipe kamar dan listing**
+
+Mengetahui faktor-faktor yang paling memengaruhi jumlah ulasan untuk meningkatkan popularitas properti.
+
 ## Dataset
 
 Data set yang digunakan pada analisis ini berasal dari [Kaggle](https://www.kaggle.com/code/indraputra21/airbnb-data-extraction-and-visualizationhttps:/).
+
+## Data Information
+
+
+
+| Nama Kolom                           | Deskripsi                                                                                                                                              |
+|--------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Unnamed: 0                           | Index dari dataset                                                                                                                                     |
+| id                                   | Primary key untuk baris tempat tersebut.                                                                                                              |
+| name                                 | Nama dari listing.                                                                                                                                     |
+| host_id                              | Primary key untuk pemilik/tuan rumah.                                                                                                     |
+| host_name                            | Nama tuan rumah/host                                                                                                         |
+| neighborhood                         | Nama daerah yang ada di kota Bangkok                                                                             |
+| Latitude                             | Garis untuk koordinat lintang.                                                                              |
+| Longitude                            | Garis untuk koordinat bujur.                                                                                |
+| room_type                            | Tipe ruangan ('Entire home/apt', 'Private room', 'Hotel room', 'Shared room')                                                 |
+| price                                | Harga sewa                                                                                                     |
+| minimum_nights                       | Jumlah minimum masa sewa permalam.                                                                          |
+| number_of_reviews                    | Jumlah ulasan yang dimiliki tempat sewa.                                                                                                                     |
+| last_review                          | Tanggal terakhir ulasan.                                                                                                                         |
+| reviews_per_month                    | Jumlah rata-rata ulasan setiap bulan.                                                                     |
+| calculated_host_listings_count       | Jumlah tempat yang dimiliki pemilik.                                                                  |
+| available_365                        | Ketersediaan tempat selama 365 hari ke depan.                                                                                                            |
+| number_of_reviews_ltm                | Jumlah ulasan yang dimiliki tempat selama 12 bulan terakhir.                                                                                           |
+
 
 ## Dashboard (Tableau)
 
